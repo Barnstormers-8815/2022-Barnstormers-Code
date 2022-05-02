@@ -42,9 +42,9 @@ public class ArcadeDriveCommand extends CommandBase {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    double converted_speed = controller0.getLeftY() * .8;
-    double converted_rotation = controller0.getRightY() * .8;
-
+    double converted_speed = controller0.getLeftY() * .4;
+    double converted_rotation = controller0.getRightY() * .4;
+/*
     if (controller0.getRightBumper()) { // This is for speed up
       converted_speed = controller0.getLeftY() * 0.9;
       converted_rotation = controller0.getRightY() * 0.9;
@@ -53,7 +53,7 @@ public class ArcadeDriveCommand extends CommandBase {
       converted_rotation = controller0.getRightY() * 0.65;
     }
     m_drivetrain.arcadeDrive(converted_speed, converted_rotation);
-
+*/
   }
 
   // Called once the command ends or is interrupted.
